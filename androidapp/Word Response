@@ -1,7 +1,0 @@
-Our app, Gamblation, is comprised of a blackjack type system where the player presses hit or stand,
- if either player receives a deck worth 21 points, they win. Some problems my team & I had,
- were making the dealer sort of sentient in a way. There were so many chances of different things happening,
- so we had to play the game many different times to fix bugs,
- set variables so that he wouldn’t get stuck on a certain number, etc..
- the way we ended up fixing it was we gathered data from rolling it 100 times,
- out of the ones that broke, we found a common problem, and sorted it out from there.

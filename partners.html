@@ -1,73 +1,122 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Home</title>
-		
-		<style>
-			
-			body {
-  				background-image: url("images/partners.jpg");
-				}	
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>Partners</title>
+<style>
+
+body {
+  	background-image: url("images/partners.jpeg");
+    background-size: cover;
+}	
 			 	
-			h1 {
-  			  text-align: center;
-  			  color: white;
-				}
-			
-			h2 {
-  			  text-align: center;
-  			  color: white;
-  			  font-size: 200%;
-				}
+h1 {
+    text-align: center;
+    color: white;
+}
 	
-		ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+h2 {
+    text-align: left;
+    color: white;
+    font-size: 200%;
+}
+
+p {
+	text-align: left;
+	
+}
+
+h3{
+    text-align: left;
+    color: white;
+    font-size: 200%;
+} 
+.navbar {
     overflow: hidden;
     background-color: #333;
-    
-    
+    font-family: Arial;
 }
 
-li {
+.navbar a {
     float: left;
-}
-
-li a {
-    display: block;
+    font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover:not(.active) {
-    background-color: #111;
-}
-.active {
-    background-color: #4CAF50;
+
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
 
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
 
-		</style>
-	</head>
-	<body>
-		<ul> 
-			<li><a class="active" href="index.html">Home</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		    <li><a href="about.html">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="partners.html">Partners</a></li>
-	    </ul>
-		
-		
-	   
-		
-		
-		<h1>Partners</h1>
-		<h2>Sevan</h2>
-		 <p><b><a href="https://plaidroni.github.io/" target="_blank">https://plaidroni.github.io/</a></b></p>
-	</body>
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="partners.html">Partners</a>
+  <div class="dropdown">
+    <button class="dropbtn">Portfolio
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+   	  <a href="portfolio.html">Information</a>
+      <a href="androidapp.html">Android App</a>
+      <a href="#">Under Construction</a>
+      <a href="#">Under Construction</a>
+    </div>
+  </div> 
+</div>
+
+<h1>Partners</h1>
+
+<h2>Sevan</h2>
+ <p><b><a href="https://plaidroni.github.io/" target="_blank">Sevan's Website</a></b></p>
+ 
+<h3>Justin</h3>
+ <p><b><a href="https://flowpro2.github.io/" target="_blank">Justin's Website</a></b></p>
+</body>
 </html>

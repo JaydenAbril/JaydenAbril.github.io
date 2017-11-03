@@ -15,8 +15,17 @@ h1 {
     color: white;
 }
 	
+p {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+}
 
-
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
 
 .navbar {
     overflow: hidden;
@@ -77,14 +86,33 @@ h1 {
     display: block;
 }
 
- #downloadaia{ text-align:center;}
- #downloadapk{ text-align:center;}
- #downloadappreview{ text-align:center;}
- #downloadwrittenresponse{ text-align:center;} 
+ #downloadaia{ text-align:center; font-size: 200%;}
+ #downloadapk{ text-align:center; font-size: 200%;}
+ #downloadappreview{ text-align:center; font-size: 200%;}
+#video{text-align:center;}
  
  
 </style>
 </head>
+
+<script>
+	    	var el = document.getElementById("video");
+function fadeIn(el) {
+  el.style.opacity = 0;
+  var tick = function() {
+    el.style.opacity = +el.style.opacity + 0.01;
+    if (+el.style.opacity < 1) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+    }
+  };
+  tick();
+}
+fadeIn(el);
+	    </script>
+
+
+
+
 <body>
 	
 
@@ -109,11 +137,20 @@ h1 {
 
 
 <h1>Android App</h1>
+    <div id = "video"><video width="1280" height="720" controls>
+  <source src="/videos/App Review.mp4" type="video/mp4">
+</video></div>
 
-<div id = "downloadappreview"><a href="androidapp/App Review.mp4" download>App Review</a></div>
-<div id = "downloadaia"><a href="androidapp/gamble.aia" download>AIA File</a></div>
+<h2>Written Response:</h2>
+<p>Our app, Gamblation, is comprised of a blackjack type system where the player presses hit or stand,
+ if either player receives a deck worth 21 points, they win. Some problems my team & I had,
+ were making the dealer sort of sentient in a way. There were so many chances of different things happening,
+ so we had to play the game many different times to fix bugs,
+ set variables so that he wouldn’t get stuck on a certain number, etc..
+ the way we ended up fixing it was we gathered data from rolling it 100 times,
+ out of the ones that broke, we found a common problem, and sorted it out from there.</p>
+ 
+ <div id = "downloadaia"><a href="androidapp/gamble.aia" download>AIA File</a></div>
 <div id = "downloadapk"><a href="androidapp/gamble.apk" download>APK File</a></div>
-<div id = "downloadwrittenresponse"><a href="androidapp/Written Response" download>Written Response</a></div>
-
 </body>
 </html>

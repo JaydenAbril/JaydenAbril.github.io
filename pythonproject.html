@@ -3,11 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="images/icon.png">
-		<title>Portfolio</title>
+	
+		<title>Python Project</title>
+		</head>
 <style>
 
 body {
-  	background-image: url("images/portfolio.jpeg");
+  	background-image: url("images/pythonquiz.jpg");
     background-size: cover;
 }	
 			 	
@@ -15,11 +17,35 @@ h1 {
     text-align: center;
     color: white;
 }
-	
+
+h2 {
+    text-align: center;
+    color: white;
+    
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    
+}
+
+h4 {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    
+}
+
 p {
     text-align: center;
     color: white;
-    font-size: 200%;
+    
+}
+
+img {
+    margin-left: 200px;
 }
 
 
@@ -81,8 +107,10 @@ p {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+#video{text-align:center;}
+
 </style>
-</head>
 <body>
 
 <div class="navbar">
@@ -97,14 +125,48 @@ p {
     <div class="dropdown-content">
    	  <a href="portfolio.html">Information</a>
       <a href="androidapp.html">Android App</a>
-      <a href="python.html">Python Create Task</a>
+      <a href="#">Python Create Task</a>
       <a href="pythonproject.html">Python Project Quiz</a>
     </div>
   </div> 
 </div>
 
-<h1>Portfolio</h1>
+<h1>Python Project Quiz</h1>
 
-<p>Hello, this is my portfolio where I'll put my projects and mostly everything in</p>
+<script>
+	    	var el = document.getElementById("video");
+function fadeIn(el) {
+  el.style.opacity = 0;
+  var tick = function() {
+    el.style.opacity = +el.style.opacity + 0.01;
+    if (+el.style.opacity < 1) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+    }
+  };
+  tick();
+}
+fadeIn(el);
+	    </script>
+
+<iframe height="400px" width="100%" src="https://repl.it/@Jayden_Abril/python-project?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+<h2>Github Repository:</h2>
+<p><b><a href="https://github.com/JaydenAbril/PythonProject" target="_blank">Github Repository</a></b></p>
+
+<h4>Pictures:</h4>
+
+
+<img src="pythonproject/oval.png" width="500" height="500">
+
+<img src="pythonproject/square.png" width="500" height="500">
+
+
+<h3>Video:</h3>
+<div id = "video"><video width="1280" height="720" controls>
+  <source src="/videos/pythonproject.mp4" type="video/mp4">
+
+
+
+
 </body>
 </html>

@@ -21,7 +21,40 @@ h1 {
 h2 {
     text-align: center;
     color: white;
-    font-size: 150%;
+    font-size: 200%;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+
+h4 {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+
+h5 {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+
+h6 {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+
+img {
+    margin-left: 300px;
+}
+
+p {
+    text-align: center;
+    font-size: 200%;
 }
 
 p1 {
@@ -68,7 +101,6 @@ p7 {
 
 
 
-
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -99,7 +131,7 @@ p7 {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: purple;
 }
 
 .dropdown-content {
@@ -127,8 +159,15 @@ p7 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+#downloadrsa{ text-align:center; font-size: 200%;}
+#video{text-align:center;}
+
+
 </style>
+
 <body>
+    
 
 <div class="navbar">
   <a href="index.html">Home</a>
@@ -152,16 +191,36 @@ p7 {
 
 <h1>RSA Project</h1>
 
+<script>
+   	    	var el = document.getElementById("video");
+function fadeIn(el) {
+  el.style.opacity = 0;
+  var tick = function() {
+    el.style.opacity = +el.style.opacity + 0.01;
+    if (+el.style.opacity < 1) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+    }
+  };
+  tick();
+}
+fadeIn(el); 
+    
+</script>
+
+<h3>RSA Project .py File:</h3>
+<div id = "downloadrsa"><a href="rsaproject/rsaproject.zip" download>RSA Project .py file</a></div>
+
+<h4>Github Repository:</h4>
+<p><b><a href="https://github.com/JaydenAbril/RSA" target="_blank">Github RSA Project</a></b></p>
+
+<h6>Key Generation and Abstraction with Algorithm:</h6>
+
+<img src="rsaproject/keycode.png" width="500" height="500">
+
+<img src="rsaproject/algorithmandabstraction.png" width="500" height="500">
 
 
-
-
-
-
-<iframe height="400px" width="100%" src="https://repl.it/@Jayden_Abril/RSA-Project?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
-
-<h2>Written Response:</h2>
+<h5>Written Response:</h5>
 <p1>Giulio and I really had trouble making a while loop function that can control all of the functions</p1>
 <p2>such as encrypting and decrypting, but we had trouble making the while loop function in general.</p2>
 <p3>While using Python 3, it was more different than the Python 2 we usually use, so it was kind of </p3>
@@ -170,6 +229,9 @@ p7 {
 <p6>and we found a solution to our while loop function. We had to make a variable, “leave” to true, </p6>
 <p7>and we made the while loop, “while leave == True:”</p7>
 
+<h2>Video:</h2>
+<div id = "video"><video width="1280" height="720" controls>
+    <source src="/rsaproject/jaydensvideo.mp4" type="video/mp4">
 
 </body>
 </html>
